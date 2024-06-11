@@ -7,11 +7,12 @@ interface Props {
 	icon_size: number;
 	icon_src: string;
 	content: string;
+	handleClick: () => void;
 }
 
-const ReceivingSelect = ({path, bgcolor, icon_src, icon_size, content}: Props) => {
+const ReceivingSelect = ({path, handleClick, bgcolor, icon_src, icon_size, content}: Props) => {
 	return (
-		<Link href={path} className={`flex items-center justify-center gap-3 text-base text-white font-bold rounded-2xl border-none py-3 ${bgcolor}`}>
+		<Link href={path} onClick={handleClick} className={`flex items-center justify-center gap-3 text-base text-white font-bold rounded-2xl border-none py-3 ${bgcolor}`}>
 			<Image src={icon_src} width={icon_size} height={icon_size} alt={content}/>
 			{content}
 		</Link>

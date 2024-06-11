@@ -2,6 +2,7 @@ import type { Config } from "tailwindcss";
 import defaultTheme from "tailwindcss/defaultTheme";
 
 const config: Config = {
+  plugins: [],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -32,6 +33,7 @@ const config: Config = {
         bodydark2: "#8A99AF",
         primary: "#23262F",
         secondary: "#777E90",
+        third: "#E6E8EC",
         stroke: "#E2E8F0",
         gray: "#EFF4FB",
         graydark: "#333A48",
@@ -330,6 +332,5 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
 };
 export default config;
