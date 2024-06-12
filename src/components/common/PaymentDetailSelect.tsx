@@ -12,7 +12,7 @@ const PaymentDetailSelect = ({placeholder, title}: Props) => {
         {title}
       </div>
       <div className="flex items-center justify-between rounded-full border-[1px] border-[#E6E8EC] px-6 py-3">
-        <input className="text-sm items-center text-primary placeholder-secondary" placeholder={placeholder} />
+        <input className="text-sm items-center text-primary placeholder-secondary outline-none" placeholder={placeholder} />
         <Image src='/images/icon/icon-copy.svg' width={18} height={18} alt="Copy Icon"/>
       </div>
     </>

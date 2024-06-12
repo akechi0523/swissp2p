@@ -1,13 +1,27 @@
+"use client"
 
 import DefaultLayout from "@/components/Layouts/DefaultLayout";
 import BuyAndSellButton from "@/components/Dashboard/Buy/BuyAndSellButton";
+import Select from "@/components/Dashboard/Sell/Select";
+import PaymentMethod from "@/components/Dashboard/Buy/PaymentMethod";
+import ReceivingMethod from "@/components/Dashboard/Buy/ReceivingMethod";
 
-export default function Home() {
+export default function Buy() {
   return (
     <>
-      <DefaultLayout>
-        <BuyAndSellButton />
-      </DefaultLayout>
+        <DefaultLayout>
+          <div className="pr-16">
+            <div className="font-medium text-xl text-primary mb-5">Overview</div>
+            <BuyAndSellButton />
+            <div className="flex gap-8">
+              <div className="flex w-1/2 flex-col gap-8">
+                <Select />
+              </div>
+              <div className="flex w-1/2 flex-col gap-8">
+              </div>
+            </div>
+          </div>
+        </DefaultLayout>
     </>
   );
 }
