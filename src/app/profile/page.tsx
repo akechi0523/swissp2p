@@ -1,18 +1,20 @@
+"use client"
 
-import { Metadata } from "next";
 import DefaultLayout from "@/components/Layouts/DefaultLayout";
+import Avatar from "@/components/Profile/Avatar";
+import ProfileInfo from "@/components/Profile/ProfileInfo";
 
-export const metadata: Metadata = {
-  title:
-    "Next.js E-commerce Dashboard | TailAdmin - Next.js Dashboard Template",
-  description: "This is Next.js Home for TailAdmin Dashboard Template",
-};
 
-export default function Home() {
+export default function Profile() {
+
   return (
     <>
       <DefaultLayout>
-        <div>Profile</div>
+        <div className="pr-16">
+          <div className="font-medium text-xl text-primary mb-5">Profile</div>
+          <Avatar />
+          <ProfileInfo />
+        </div>
       </DefaultLayout>
     </>
   );

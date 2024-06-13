@@ -1,5 +1,3 @@
-"use client"
-
 import DefaultLayout from "@/components/Layouts/DefaultLayout";
 import PaymentToBuy from "@/components/Payment/PaymentToBuy";
 

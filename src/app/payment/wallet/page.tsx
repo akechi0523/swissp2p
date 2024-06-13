@@ -4,7 +4,7 @@ import DefaultLayout from "@/components/Layouts/DefaultLayout";
 import Account from "@/components/Payment/Account";
 import ConfirmButton from "@/components/common/ConfirmButton";
 import VerificationCode from "@/components/Payment/VerificaitionCode";
-import CommonComboBox from "@/components/common/CommonComboBox";
+import PaymentComboBox from "@/components/common/PaymentComboBox";
 import AddWallet from "@/components/Payment/AddWallet";
 import Image from "next/image";
 import { useState } from "react";
@@ -37,8 +37,8 @@ export default function Buy() {
                 <div className="bg-white rounded-3xl px-8 py-6">
                   <div className="font-medium text-xl text-primary mb-3">Wallet Details</div>
                   <div className="flex flex-col">
-                    <CommonComboBox options={selectCurrencyOptions} select="Select Currency" isConfirm={isConfirm}/>
-                    <CommonComboBox options={selectNetworkOptions} select="Select Network" isConfirm={isConfirm}/>
+                    <PaymentComboBox options={selectCurrencyOptions} select="Select Currency" isConfirm={isConfirm}/>
+                    <PaymentComboBox options={selectNetworkOptions} select="Select Network" isConfirm={isConfirm}/>
                   </div>
                 </div>
                 {/**Wallet Address */}

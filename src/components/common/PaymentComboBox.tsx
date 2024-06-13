@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 
 interface ComboboxOption {
@@ -14,7 +14,7 @@ interface Props {
   isConfirm: boolean;
 }
 
-const CommonComboBox = ({options, select, isConfirm}: Props) => {
+const PaymentComboBox = ({options, select, isConfirm}: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [name, setName] = useState(select =='Select Currency' ? 'USDT' : 'TRON');
   const [icon, setIcon] = useState(select =='Select Currency' ? '/images/icon/icon-usdt.svg' : '/images/icon/icon-tron.svg');
@@ -77,4 +77,4 @@ const CommonComboBox = ({options, select, isConfirm}: Props) => {
   );
 };
 
-export default CommonComboBox;
+export default PaymentComboBox;

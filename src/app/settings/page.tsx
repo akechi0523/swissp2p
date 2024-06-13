@@ -1,18 +1,26 @@
-
-import { Metadata } from "next";
 import DefaultLayout from "@/components/Layouts/DefaultLayout";
+import ProfileInfo from "@/components/Profile/ProfileInfo";
+import TwoFactorAuth from "@/components/Settings/TwoFactorAuth";
+import AccountManagement from "@/components/Settings/AccountManagement";
 
-export const metadata: Metadata = {
-  title:
-    "Next.js E-commerce Dashboard | TailAdmin - Next.js Dashboard Template",
-  description: "This is Next.js Home for TailAdmin Dashboard Template",
-};
 
-export default function Home() {
+export default function Settings() {
+
   return (
     <>
       <DefaultLayout>
-        <div>Settings</div>
+        <div className="pr-16">
+          <div className="font-medium text-xl text-primary mb-5">Settings</div>
+          <ProfileInfo />
+          <div className="flex gap-12 mt-8">
+            <div className="flex w-1/2 flex-col gap-8">
+              <TwoFactorAuth />
+            </div>
+            <div className="flex w-1/2 flex-col gap-8">
+              <AccountManagement />
+            </div>
+          </div>
+        </div>
       </DefaultLayout>
     </>
   );
