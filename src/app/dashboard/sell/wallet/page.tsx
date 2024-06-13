@@ -23,7 +23,7 @@ export default function Bank() {
         <div className="pr-16">
           <div className="font-medium text-xl text-primary mb-5">Overview</div>
           <BuyAndSellButton />
-          <div className="flex gap-8">
+          <div className="flex gap-12">
             <div className="flex w-1/2 flex-col gap-8">
               {/*Selct */}
               <Select />              

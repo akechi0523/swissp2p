@@ -23,14 +23,14 @@ export default function Bank() {
         <div className="pr-16">
           <div className="font-medium text-xl text-primary mb-5">Overview</div>
           <BuyAndSellButton />
-          <div className="flex gap-8">
+          <div className="flex gap-12">
             <div className="flex w-1/2 flex-col gap-8">
               {/*Selct */}
               <Select />              
               {/*Payment Details */}
               <div className="bg-white rounded-3xl px-8 py-6">
                 <div className="font-medium text-xl text-primary mb-3">Payment Details</div>
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-3">
                   <PaymentDetailSelect title="Binance ID" placeholder="Binance ID"/>
                   <PaymentDetailSelect title="Pay ID" placeholder="Pay ID"/>
                   <PaymentDetailSelect title="Email ID" placeholder="5647"/>

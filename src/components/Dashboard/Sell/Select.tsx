@@ -3,6 +3,7 @@
 import Image from "next/image";
 import ReceivingSelect from "../Buy/ReceivingSelect";
 import { useTransactionContext } from "@/context/TransactionContext";
+import { useEffect } from "react";
 
 const Select = () => {
 	const { orderNo, currency, amount, receivingMethod, setValues } = useTransactionContext();
@@ -10,7 +11,7 @@ const Select = () => {
 		setValues((prev) => ({ ...prev, currency: currency}))
 	}
 	const handleReceivingSelect = (receivingMethod: string) => {
-		setValues((prev) => ({ ...prev, receivingMethod: receivingMethod}))
+		setValues((prev) => ({ ...prev, receivingMethod: receivingMethod}));
 	}
 
 	let icon;
@@ -30,18 +31,6 @@ const Select = () => {
 			icon = '/images/icon/icon-usdt.svg';
 			break;
 	}
-
-	switch (receivingMethod) {
-		case "Binance Pay" :
-			route = 'sell/binance';
-			break;
-		case "Connet Wallet" :
-			route = 'sell/wallet';
-			break;
-		default:
-			route = '#'
-			break;
-		}
 
 	return (
 		<div className="bg-white rounded-3xl px-8 py-6">
@@ -80,9 +69,10 @@ const Select = () => {
           <Image src={icon} width={24} height={24} alt="USDT"/>
           {currency}
         </div>
-        <input id="amount" type="text" className="placeholder-secondary text-right text-primary text-base outline-none" placeholder="500.00" 
+        <input id="amount" type="text" className="placeholder-secondary text-right text-primary text-base outline-none" placeholder="500.00" value={amount}
           onChange={(e)=> {
             setValues((prev) => ({...prev, amount: e.target.value}));
+						console.log(amount);
           }}
         ></input>
       </div>
@@ -93,8 +83,8 @@ const Select = () => {
 			</div>
 
 			<div className="flex flex-col gap-4 mt-4">
-        <ReceivingSelect path={`${amount ? route : '#'}`} bgcolor="bg-[#F2C94C]" icon_size={36} icon_src="/images/icon/icon-binance.svg" content="Binance Pay" handleClick={() => handleReceivingSelect("Binance Pay")} />
-        <ReceivingSelect path={`${amount ? route : '#'}`} bgcolor="bg-primary" icon_size={36} icon_src="/images/icon/icon-wallet.svg" content="Connet Wallet" handleClick={() => handleReceivingSelect("Connet Wallet")} />
+        <ReceivingSelect path={`${amount ? 'sell/binance' : '#'}`} bgcolor="bg-[#F2C94C]" icon_size={36} icon_src="/images/icon/icon-binance.svg" content="Binance Pay" handleClick={() => handleReceivingSelect("Binance Pay")} />
+        <ReceivingSelect path={`${amount ? 'sell/wallet' : '#'}`} bgcolor="bg-primary" icon_size={36} icon_src="/images/icon/icon-wallet.svg" content="Connet Wallet" handleClick={() => handleReceivingSelect("Connet Wallet")} />
       </div>
 		</div>
 	);

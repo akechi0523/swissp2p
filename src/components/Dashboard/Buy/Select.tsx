@@ -64,7 +64,7 @@ const Select = () => {
 						<Image src="/images/icon/icon-chf.svg" width={24} height={24} alt="CHF"/>
 						CHF
 					</div>
-					<input id="amount" type="text" className="placeholder-secondary text-right text-primary text-base outline-none" placeholder="500.00" 
+					<input id="amount" type="text" className="placeholder-secondary text-right text-primary text-base outline-none" placeholder="500.00" value={amount}
 						onChange={(e)=> {
 							setValues((prev) => ({...prev, amount: e.target.value}));
 						}}
