@@ -29,13 +29,13 @@ export default function Buy() {
     <>
         <DefaultLayout>
           <div className="pr-16">
-            <div className="font-medium text-xl text-primary mb-5">{`${isConfirm? 'Wallet Confirmation' : 'Wallet Details'}`}</div>
+            <div className="font-medium text-xl text-primary dark:text-white mb-5">{`${isConfirm? 'Wallet Confirmation' : 'Wallet Details'}`}</div>
             <div className="flex gap-12">
               <div className="flex flex-col w-1/2 gap-8">
                 <Account icon_src1="/images/icon/icon-bank.svg" name="Wallet Address" icon_src2={`${!isConfirm ? "/images/icon/icon-checked2.svg" : "/images/icon/icon-checked.svg"}`}/>
                 {/*Wallet Details */}
                 <div className="bg-white rounded-3xl px-8 py-6">
-                  <div className="font-medium text-xl text-primary mb-3">Wallet Details</div>
+                  <div className="font-medium text-xl text-primary dark:text-white mb-3">Wallet Details</div>
                   <div className="flex flex-col">
                     <PaymentComboBox options={selectCurrencyOptions} select="Select Currency" isConfirm={isConfirm}/>
                     <PaymentComboBox options={selectNetworkOptions} select="Select Network" isConfirm={isConfirm}/>
@@ -43,17 +43,17 @@ export default function Buy() {
                 </div>
                 {/**Wallet Address */}
                 <div className="bg-white rounded-3xl px-8 py-6">
-                  <div className="font-medium text-xl text-primary mb-3">Wallet Address</div>
+                  <div className="font-medium text-xl text-primary dark:text-white mb-3">Wallet Address</div>
                   <div className="flex flex-col gap-3">
                     <div className="flex items-center justify-center bg-third text-secondary rounded-full border-none px-6 py-3">
                       Wallet Address
                     </div>
-                    <div className="flex items-center gap-2 font-medium text-primary">
+                    <div className="flex items-center gap-2 font-medium text-primary dark:text-white">
                       <Image src='/images/icon/icon-tron.svg' width={24} height={24} alt="icon"/>
                       Tron
                     </div>
                     { !isConfirm &&
-                      <div className="text-base text-primary">Description
+                      <div className="text-base text-primary dark:text-white">Description
                         <p className="text-sm text-secondary py-2">Lorem ipsum dolor sit amet consectetur. Erat donec etiam id dictum id ac. Vulputate egestas id lacus mauris lectus hac. Nunc semper malesuada sed pharetra tellus vitae.</p>
                       </div>
                     }
@@ -65,11 +65,11 @@ export default function Buy() {
               <div className="flex flex-col w-1/2 gap-8">
               { !isConfirm && 
                 <>
-                  <div className="text-base text-primary">Description
+                  <div className="text-base text-primary dark:text-white">Description
                     <p className="text-sm text-secondary py-2">Lorem ipsum dolor sit amet consectetur. Erat donec etiam id dictum id ac. Vulputate egestas id lacus mauris lectus hac. Nunc semper malesuada sed pharetra tellus vitae.</p>
                   </div>
                   <div>
-                    <div className="font-medium text-xl text-primary mb-5">Verification Code</div>
+                    <div className="font-medium text-xl text-primary dark:text-white mb-5">Verification Code</div>
                     <div className="flex flex-col gap-3">
                       <VerificationCode />
                     </div>

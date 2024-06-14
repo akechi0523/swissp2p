@@ -21,7 +21,7 @@ export default function Bank() {
     <>
       <DefaultLayout>
         <div className="pr-16">
-          <div className="font-medium text-xl text-primary mb-5">Overview</div>
+          <div className="font-medium text-xl text-primary dark:text-white mb-5">Overview</div>
           <BuyAndSellButton />
           <div className="flex gap-12">
             <div className="flex w-1/2 flex-col gap-8">
@@ -32,7 +32,7 @@ export default function Bank() {
             <div className="flex w-1/2 flex-col gap-8">
               {/**Payment Method */}
               <div className="bg-white rounded-3xl px-8 py-6">
-                <div className="font-medium text-xl text-primary mb-3">Payment Method</div>
+                <div className="font-medium text-xl text-primary dark:text-white mb-3">Payment Method</div>
                 <div className="flex flex-col gap-3">
                   <PaymentSelect bgcolor={paymentMethod == "Bank Transfer" ? "bg-[#E6E8EC]" : "bg-white"} icon_src="/images/icon/icon-bank.svg" content="Bank Transfer" handleClick={() => handlePaymentSelect("Bank Transfer")}/>
                   <PaymentSelect bgcolor={paymentMethod == "Twint" ? "bg-[#E6E8EC]" : "bg-white"} icon_src="/images/icon/icon-twint.svg" content="Twint" handleClick={() => handlePaymentSelect("Twint")}/>
@@ -45,7 +45,7 @@ export default function Bank() {
                   </div>}
                 </div>
               </div>
-              <div className="text-base text-primary">Description
+              <div className="text-base text-primary dark:text-white">Description
                 <p className="text-sm text-secondary py-2">Lorem ipsum dolor sit amet consectetur. Erat donec etiam id dictum id ac. Vulputate egestas id lacus mauris lectus hac. Nunc semper malesuada sed pharetra tellus vitae.</p>
               </div>
             </div>

@@ -19,13 +19,13 @@ export default function Buy() {
     <>
         <DefaultLayout>
           <div className="pr-16">
-            <div className="font-medium text-xl text-primary mb-5">{`${isConfirm? 'Binance Pay Confirmation' : 'Binance Pay Details'}`}</div>
+            <div className="font-medium text-xl text-primary dark:text-white mb-5">{`${isConfirm? 'Binance Pay Confirmation' : 'Binance Pay Details'}`}</div>
             <div className="flex gap-12">
               <div className="flex flex-col w-1/2 gap-8">
                 <Account icon_src1="/images/icon/icon-bank.svg" name="Binance Pay" icon_src2={`${!isConfirm ? "/images/icon/icon-checked2.svg" : "/images/icon/icon-checked.svg"}`}/>
                 {/*Payment Details */}
                 <div className="bg-white rounded-3xl px-8 py-6">
-                  <div className="font-medium text-xl text-primary mb-3">Payment Details</div>
+                  <div className="font-medium text-xl text-primary dark:text-white mb-3">Payment Details</div>
                   <div className="flex flex-col gap-3">
                     <CommonInput title="Full Name" placeholder="Beneficiary name"/>
                     <PaymentDetailSelect title="Pay ID" placeholder="22122"/>
@@ -37,11 +37,11 @@ export default function Buy() {
               <div className="flex flex-col w-1/2 gap-8">
               { !isConfirm && 
                 <>
-                  <div className="text-base text-primary">Description
+                  <div className="text-base text-primary dark:text-white">Description
                     <p className="text-sm text-secondary py-2">Lorem ipsum dolor sit amet consectetur. Erat donec etiam id dictum id ac. Vulputate egestas id lacus mauris lectus hac. Nunc semper malesuada sed pharetra tellus vitae.</p>
                   </div>
                   <div>
-                    <div className="font-medium text-xl text-primary mb-5">Verification Code</div>
+                    <div className="font-medium text-xl text-primary dark:text-white mb-5">Verification Code</div>
                     <div className="flex flex-col gap-3">
                       <VerificationCode />
                     </div>

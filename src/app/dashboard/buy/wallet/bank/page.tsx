@@ -15,7 +15,7 @@ export default function Bank() {
     <>
       <DefaultLayout>
         <div className="pr-16">
-          <div className="font-medium text-xl text-primary mb-5">Overview</div>
+          <div className="font-medium text-xl text-primary dark:text-white mb-5">Overview</div>
           <BuyAndSellButton />
           <div className="flex gap-12">
             <div className="flex w-1/2 flex-col gap-8">
@@ -23,9 +23,9 @@ export default function Bank() {
               <Select />
               {/*Receiving Method */}
               <div className="bg-white rounded-3xl px-8 py-6">
-                <div className="font-medium text-xl text-primary mb-3">Receiving Method</div>
+                <div className="font-medium text-xl text-primary dark:text-white mb-3">Receiving Method</div>
                 <div className="flex flex-col gap-4">
-                  <div className='flex items-center justify-center gap-3 bg-third text-base text-primary font-bold rounded-2xl border-none py-3'>
+                  <div className='flex items-center justify-center gap-3 bg-third text-base text-primary dark:text-white font-bold rounded-2xl border-none py-3'>
                     <Image src='/images/icon/icon-wallet-secondary.svg' width={36} height={36} alt='Wallet Deposit'/>
                     Wallet Deposit
                   </div>
@@ -33,15 +33,15 @@ export default function Bank() {
               </div>
               {/*Payment Method */}
               <div className="bg-white rounded-3xl px-8 py-6">
-                <div className="font-medium text-xl text-primary mb-3">Payment Method</div>
+                <div className="font-medium text-xl text-primary dark:text-white mb-3">Payment Method</div>
                 <div className="flex flex-col gap-3">
-                  <div className={`flex items-center gap-3 text-primary font-medium rounded-2xl bg-third border-[1px] border-[#E6E8EC] hover:bg-[#E6E8EC] px-6 py-3`}>
+                  <div className={`flex items-center gap-3 text-primary dark:text-white font-medium rounded-2xl bg-third border-[1px] border-[#E6E8EC] hover:bg-[#E6E8EC] px-6 py-3`}>
                     <Image src='/images/icon/icon-bank.svg' width={36} height={36} alt='Bank Transfer'/>
                     Bank Transfer
                   </div>
                 </div>
               </div>
-              <div className="text-base text-primary">Description
+              <div className="text-base text-primary dark:text-white">Description
                 <p className="text-sm text-secondary py-2">Lorem ipsum dolor sit amet consectetur. Erat donec etiam id dictum id ac. Vulputate egestas id lacus mauris lectus hac. Nunc semper malesuada sed pharetra tellus vitae.</p>
               </div>
             </div>
@@ -49,7 +49,7 @@ export default function Bank() {
             <div className="flex w-1/2 flex-col gap-8">
               {/*Payment Details */}
               <div className="bg-white rounded-3xl px-8 py-6">
-                <div className="font-medium text-xl text-primary mb-3">Payment Details</div>
+                <div className="font-medium text-xl text-primary dark:text-white mb-3">Payment Details</div>
                 <div className="flex flex-col gap-3">
                   <PaymentDetailSelect title="Company Name" placeholder="Account holder name"/>
                   <PaymentDetailSelect title="IBN" placeholder="IBN"/>

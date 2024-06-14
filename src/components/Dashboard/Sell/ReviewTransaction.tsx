@@ -38,19 +38,19 @@ const ReviewTransaction = () => {
         {openModal &&
           <div className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center'>
             <div className='flex flex-col gap-6 bg-white rounded-3xl px-16 py-12'>
-              <div className="font-medium text-xl text-primary mb-3">Review Transaction</div>
-              <div className='flex items-center justify-between text-base font-normal text-primary gap-40'>
+              <div className="font-medium text-xl text-primary dark:text-white mb-3">Review Transaction</div>
+              <div className='flex items-center justify-between text-base font-normal text-primary dark:text-white gap-40'>
                 <div>Transaction Type</div>
                 <div className={`${exchangeType == 'Buy' ? 'text-[#04C063]' : 'text-[#FF3032]'}`}>{exchangeType}</div>
               </div>
-              <div className='flex items-center justify-between text-base font-normal text-primary gap-40'>
+              <div className='flex items-center justify-between text-base font-normal text-primary dark:text-white gap-40'>
                 <div>Transaction Time</div>
                 <div className='flex items-center gap-1'>
                   <Image src="/images/icon/icon-watch.svg" width={24} height={24} alt="Watch"></Image>
                   5 Min.
                 </div>
               </div>
-              <div className='flex items-center justify-between text-base font-normal text-primary'>
+              <div className='flex items-center justify-between text-base font-normal text-primary dark:text-white'>
                 <div>You wil sell</div>
                 <div className='flex justify-between w-40'>
                   <span>{amount}</span>
@@ -60,7 +60,7 @@ const ReviewTransaction = () => {
                   </div>
                 </div>
               </div>
-              <div className='flex items-center justify-between text-base font-normal text-primary gap-40'>
+              <div className='flex items-center justify-between text-base font-normal text-primary dark:text-white gap-40'>
                 <div>You wil receive</div>
                 <div className='flex justify-between w-40'>
                   <span>{amount}</span>
@@ -70,7 +70,7 @@ const ReviewTransaction = () => {
                   </div>
                 </div>
               </div>
-              <div className='flex items-center justify-between text-base font-normal text-primary gap-40'>
+              <div className='flex items-center justify-between text-base font-normal text-primary dark:text-white gap-40'>
                 <div>Payment Method</div>
                 <div>{paymentMethod}</div>
               </div>

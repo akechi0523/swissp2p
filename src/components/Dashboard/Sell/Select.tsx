@@ -34,11 +34,11 @@ const Select = () => {
 
 	return (
 		<div className="bg-white rounded-3xl px-8 py-6">
-			<div className="font-medium text-xl text-primary mb-3">Select</div>
+			<div className="font-medium text-xl text-primary dark:text-white mb-3">Select</div>
 			<div className="flex gap-5 mb-5">
 				<button
 					onClick={() => handleCurrencySelect("USDT")} 
-					className={`flex w-1/3 gap-2 items-center justify-center py-3 border-[1px] border-[#E6E8EC] rounded-full ${currency == "USDT" ? "bg-[#E6E8EC]" : "bg-white"} hover:bg-[#E6E8EC] text-base font-medium text-primary`}
+					className={`flex w-1/3 gap-2 items-center justify-center py-3 border-[1px] border-[#E6E8EC] rounded-full ${currency == "USDT" ? "bg-[#E6E8EC]" : "bg-white"} hover:bg-[#E6E8EC] text-base font-medium text-primary dark:text-white`}
 				>
 					<Image src="/images/icon/icon-usdt.svg" width={24} height={24} alt="USDT" />
 					USDT
@@ -46,7 +46,7 @@ const Select = () => {
 
 				<button
 					onClick={() => handleCurrencySelect("BTC")} 
-					className={`flex w-1/3 gap-2 items-center justify-center py-3 border-[1px] border-[#E6E8EC] rounded-full ${currency == "BTC" ? "bg-[#E6E8EC]" : "bg-white"} hover:bg-[#E6E8EC] text-base font-medium text-primary`}
+					className={`flex w-1/3 gap-2 items-center justify-center py-3 border-[1px] border-[#E6E8EC] rounded-full ${currency == "BTC" ? "bg-[#E6E8EC]" : "bg-white"} hover:bg-[#E6E8EC] text-base font-medium text-primary dark:text-white`}
 				>
 					<Image src="/images/icon/icon-btc.svg" width={24} height={24} alt="BTC" />
 					BTC
@@ -54,14 +54,14 @@ const Select = () => {
 
 				<button
 					onClick={() => handleCurrencySelect("ETH")} 
-					className={`flex w-1/3 gap-2 items-center justify-center py-3 border-[1px] border-[#E6E8EC] rounded-full ${currency == "ETH" ? "bg-[#E6E8EC]" : "bg-white"} hover:bg-[#E6E8EC] text-base font-medium text-primary`}
+					className={`flex w-1/3 gap-2 items-center justify-center py-3 border-[1px] border-[#E6E8EC] rounded-full ${currency == "ETH" ? "bg-[#E6E8EC]" : "bg-white"} hover:bg-[#E6E8EC] text-base font-medium text-primary dark:text-white`}
 				>
 					<Image src="/images/icon/icon-eth.svg" width={24} height={24} alt="ETH" />
 					ETH
 				</button>
 			</div>
 			
-			<div className="text-base font-normal text-primary mb-3">Order No:
+			<div className="text-base font-normal text-primary dark:text-white mb-3">Order No:
 				<span className="text-secondary pl-3">{orderNo}</span>
 			</div>			
       <div className="flex items-center justify-between mt-1 rounded-full border-[1px] border-[#E6E8EC] px-6 py-3">
@@ -69,7 +69,7 @@ const Select = () => {
           <Image src={icon} width={24} height={24} alt="USDT"/>
           {currency}
         </div>
-        <input id="amount" type="text" className="placeholder-secondary text-right text-primary text-base outline-none" placeholder="500.00" value={amount}
+        <input id="amount" type="text" className="placeholder-secondary text-right text-primary dark:text-white text-base outline-none" placeholder="500.00" value={amount}
           onChange={(e)=> {
             setValues((prev) => ({...prev, amount: e.target.value}));
 						console.log(amount);

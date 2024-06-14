@@ -10,7 +10,7 @@ export default function Settings() {
     <>
       <DefaultLayout>
         <div className="pr-16">
-          <div className="font-medium text-xl text-primary mb-5">Settings</div>
+          <div className="font-medium text-xl text-primary dark:text-white mb-5">Settings</div>
           <ProfileInfo />
           <div className="flex gap-12 mt-8">
             <div className="flex w-1/2 flex-col gap-8">

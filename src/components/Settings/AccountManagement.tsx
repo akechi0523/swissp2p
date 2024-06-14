@@ -2,7 +2,7 @@ const AccountManagement = () => {
 
 	return (
 		<div className="bg-white rounded-3xl px-8 py-6">
-			<div className="font-medium text-xl text-primary mb-3">Two Factor Authentication</div>
+			<div className="font-medium text-xl text-primary dark:text-white mb-3">Two Factor Authentication</div>
       <div className="flex flex-col gap-6">
         <div className="flex items-center justify-between gap-10">
           <div>

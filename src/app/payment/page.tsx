@@ -6,7 +6,7 @@ export default function Buy() {
     <>
       <DefaultLayout>
         <div className="pr-16">
-          <div className="font-medium text-xl text-primary mb-5">Payment To Buy</div>
+          <div className="font-medium text-xl text-primary dark:text-white mb-5">Payment To Buy</div>
           <div className="flex gap-12">              
             <div className="flex flex-col w-1/2 gap-3">
               <PaymentToBuy icon_src="/images/icon/icon-bank.svg" name="Bank Transfer" link="payment/bank"/>

@@ -33,7 +33,7 @@ const PaymentComboBox = ({options, select, isConfirm}: Props) => {
 
   return (
     <>
-      <div className="text-base text-primary mb-3 mt-3">
+      <div className="text-base text-primary dark:text-white mb-3 mt-3">
         {select}
       </div>
       <button
@@ -41,7 +41,7 @@ const PaymentComboBox = ({options, select, isConfirm}: Props) => {
         className='flex items-center justify-between rounded-full border-[1px] border-[#E6E8EC] px-6 py-3'
         onClick={toggleCombobox}
       >
-        <div className="flex items-center gap-2 font-medium text-primary">
+        <div className="flex items-center gap-2 font-medium text-primary dark:text-white">
           <Image src={icon} width={24} height={24} alt="icon"/>
           {name}
         </div>
@@ -61,7 +61,7 @@ const PaymentComboBox = ({options, select, isConfirm}: Props) => {
             {options.map((option) => (
               <li key={option.id} className='px-6 py-2 hover:bg-secondary hover:bg-opacity-20' onClick={() => {closeCombobox(); setName(option.name);setIcon(option.icon);setToken(option.token);}}>
                 <div className='flex justify-between'>
-                  <div className="flex items-center gap-2 font-medium text-primary">
+                  <div className="flex items-center gap-2 font-medium text-primary dark:text-white">
                     <Image src={option.icon} width={24} height={24} alt="icon"/>
                     {option.name}
                   </div>

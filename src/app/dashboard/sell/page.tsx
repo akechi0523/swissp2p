@@ -11,7 +11,7 @@ export default function Buy() {
     <>
         <DefaultLayout>
           <div className="pr-16">
-            <div className="font-medium text-xl text-primary mb-5">Overview</div>
+            <div className="font-medium text-xl text-primary dark:text-white mb-5">Overview</div>
             <BuyAndSellButton />
             <div className="flex gap-12">
               <div className="flex w-1/2 flex-col gap-8">

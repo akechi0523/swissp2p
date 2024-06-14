@@ -6,7 +6,7 @@ export default function Transactions() {
     <>
       <DefaultLayout>
         <div className="pr-16">
-          <div className="font-medium text-xl text-primary mb-5">Transaction</div>
+          <div className="font-medium text-xl text-primary dark:text-white mb-5">Transaction</div>
           <div className="flex gap-12">              
             <div className="flex flex-col w-1/2">
               <div className="flex flex-col gap-3 bg-white rounded-3xl px-8 py-6">

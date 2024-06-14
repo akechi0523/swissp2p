@@ -11,8 +11,14 @@ export default function Profile() {
     <>
       <DefaultLayout>
         <div className="pr-16">
-          <div className="font-medium text-xl text-primary mb-5">Profile</div>
+          <div className="font-medium text-xl text-primary dark:text-white mb-5">Profile</div>
           <Avatar />
+          <div className="flex items-center gap-5 mb-5">
+            <button className="text-xl font-medium text-primary dark:text-white">KYC</button>
+            <button className="text-xl font-medium text-primary dark:text-white">Verify</button>
+            <button className="text-xl font-medium text-primary dark:text-white">Verify</button>
+            <button className="text-xl font-medium text-primary dark:text-white">Verify</button>
+          </div>
           <ProfileInfo />
         </div>
       </DefaultLayout>

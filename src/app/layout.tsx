@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body suppressHydrationWarning={true}>
         <TransactionProvider>
-          <div className="dark:bg-boxdark-2 dark:text-bodydark">
+          <div className="dark:bg-bodydark dark:text-bodydark duration-300 ease-linear">
             {loading ? <Loader /> : children}
           </div>
         </TransactionProvider>

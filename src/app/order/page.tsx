@@ -18,7 +18,7 @@ export default function Order() {
     <>
       <DefaultLayout>
         <div className="pr-16">
-          <div className="font-medium text-xl text-primary mb-5">Order</div>
+          <div className="font-medium text-xl text-primary dark:text-white mb-5">Order</div>
           <div className="flex gap-12">              
             <div className="w-1/4">
               <OrderType bgcolor="bg-[#AC9AE2]" icon="/images/icon/icon-order2.svg" icon_size={48} name="Total Order" value="500" />
