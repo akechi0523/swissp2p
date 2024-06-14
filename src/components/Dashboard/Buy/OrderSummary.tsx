@@ -11,7 +11,7 @@ const OrderSummary = () => {
 	}
 
 	return (
-		<div className="bg-white rounded-3xl px-8 py-6">
+		<div className="bg-white dark:bg-primary rounded-3xl px-8 py-6">
 			<div className="font-medium text-xl text-primary dark:text-white mb-3">Order Summary</div>
 			<div className="flex justify-between mb-3 px-8">
 				<button className="text-base text-secondary focus:text-[#04C063]">Completed</button>

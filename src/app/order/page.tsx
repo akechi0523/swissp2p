@@ -27,14 +27,14 @@ export default function Order() {
               <OrderType bgcolor="bg-[#04C063]" icon="/images/icon/icon-order2.svg" icon_size={48} name="Completed Order" value="200" />
             </div>
             <div className="w-1/4">
-              <OrderType bgcolor="bg-[#F2994A]" icon="/images/icon/icon-order2.svg" icon_size={48} name="pending Order" value="30" />
+              <OrderType bgcolor="bg-[#F2994A]" icon="/images/icon/icon-order2.svg" icon_size={48} name="Pending Order" value="30" />
             </div>
             <div className="w-1/4">
               <OrderType bgcolor="bg-[#FF3032]" icon="/images/icon/icon-order2.svg" icon_size={48} name="Cancelled Order" value="10" />
             </div>
           </div>
           {/**Table */}
-          <div className="bg-white rounded-3xl px-8 py-6 mt-8">
+          <div className="bg-white dark:bg-primary rounded-3xl px-8 py-6 mt-8">
             <table className="w-full text-sm">
               <thead className="text-secondary border-b-[1px] border-secondary">
                 <tr>

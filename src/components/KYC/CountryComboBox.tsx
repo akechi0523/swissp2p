@@ -28,13 +28,13 @@ const CountryComboBox = () => {
       </div>
       <button
         type='button'
-        className='flex items-center justify-between bg-white rounded-full border-[1px] border-[#E6E8EC] px-6 py-3'
+        className='flex items-center justify-between text-primary dark:text-white dark:bg-primary rounded-full border-[1px] border-thrid dark:border-secondary px-6 py-3'
         onClick={toggleCombobox}
       >
-        <div className="items-center text-primary dark:text-white">
+        <div className="items-center">
           {countryName}
         </div>
-        <svg className='w-4 h-4 ml-2.5' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 6'>
+        <svg className='w-4 h-4 ml-2.5 stroke-current' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 6'>
           <path stroke='currentColor' strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='m1 1 4 4 4-4' />
         </svg>     
       </button>

@@ -9,7 +9,7 @@ const ProfileInfo = () => {
   const [isChecked, setIsChecked] = useState(false);
 
   return (
-    <div className="bg-white rounded-3xl px-8 py-6">
+    <div className="bg-white dark:bg-primary rounded-3xl px-8 py-6">
       <div className="font-medium text-xl text-primary dark:text-white mb-3">Personal Infomation</div>
       <div className="flex gap-12">
         <div className="flex flex-col w-1/2 gap-3">

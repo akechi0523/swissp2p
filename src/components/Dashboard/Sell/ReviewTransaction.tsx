@@ -36,8 +36,8 @@ const ReviewTransaction = () => {
           onClick={handleModal}
         >Review Transaction</button>
         {openModal &&
-          <div className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center'>
-            <div className='flex flex-col gap-6 bg-white rounded-3xl px-16 py-12'>
+          <div className='fixed top-0 left-0 w-full h-full z-99999 bg-black bg-opacity-50 flex justify-center items-center'>
+            <div className='flex flex-col gap-6 bg-white dark:bg-primary rounded-3xl px-16 py-12 shadow-6 shadow-neutral-500'>
               <div className="font-medium text-xl text-primary dark:text-white mb-3">Review Transaction</div>
               <div className='flex items-center justify-between text-base font-normal text-primary dark:text-white gap-40'>
                 <div>Transaction Type</div>
@@ -79,7 +79,7 @@ const ReviewTransaction = () => {
               <div className="flex max-w-100 items-start gap-3">
                 <label className="relative flex items-center rounded-full pt-1 cursor-pointer" htmlFor="checkbox">
                   <input type="checkbox"
-                    className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-blue-500 checked:bg-blue-500 checked:before:bg-blue-500 hover:before:opacity-10"
+                    className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-primary dark:border-white transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-blue-500 checked:bg-blue-500 checked:before:bg-blue-500 hover:before:opacity-10"
                     id="checkbox" checked={isChecked}
                     onClick={() => setIsChecked(!isChecked)} readOnly/>
                   <span
@@ -92,13 +92,13 @@ const ReviewTransaction = () => {
                     </svg>
                   </span>
                 </label>
-                <label htmlFor="checkbox" className="text-base text-secondary">I understand, and have read and accept the <span className="text-primary">Terms & Conditions</span></label>
+                <label htmlFor="checkbox" className="text-base text-secondary">I understand, and have read and accept the <span className="text-primary dark:text-white">Terms & Conditions</span></label>
               </div>
 
               {/*cancel & confirm*/}
               <div className='flex justify-between gap-10'>
                 <button
-                  className='flex w-1/2 items-center justify-center text-secondary font-medium rounded-2xl bg-white border-[1px] border-secondary py-4'
+                  className='flex w-1/2 items-center justify-center text-secondary font-medium rounded-2xl bg-white dark:bg-primary border-[1px] border-secondary py-4'
                   onClick={() => {handleModal(); setIsChecked(false);}}
                 >Cancel</button>
                 <Link 

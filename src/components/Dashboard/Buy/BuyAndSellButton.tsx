@@ -16,7 +16,7 @@ const BuyAndSellButton = () => {
 
 	return (
 		<div className="flex px-8 py-7 rounded-3xl bg-white dark:bg-primary gap-5 mb-5">
-			<Link href="/dashboard/buy" onClick={() => handleClick('Buy')} className={`rounded-full font-bold text-sm px-30 py-5 border-[2px] ${pathname.includes("buy") ? "text-white bg-[#04C063] border-[#04C063]":"text-[#04C063] border-[#04C063]"}`}>Buy</Link>
+			<Link href="/dashboard/buy" onClick={() => {handleClick('Buy'); console.log(receivingMethod)}} className={`rounded-full font-bold text-sm px-30 py-5 border-[2px] ${pathname.includes("buy") ? "text-white bg-[#04C063] border-[#04C063]":"text-[#04C063] border-[#04C063]"}`}>Buy</Link>
 			<Link href="/dashboard/sell" onClick={() => handleClick('Sell')} className={`rounded-full font-bold text-sm px-30 py-5 border-[2px] ${pathname.includes("sell") ? "text-white bg-[#FF3032] border-[#FF3032]":"text-[#FF3032] border-[#FF3032]"}`}>Sell</Link>
 		</div>
 	);

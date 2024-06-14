@@ -43,7 +43,7 @@ const WalletConnect = () => {
             <WalletType icon='/images/icon/icon-metamask.svg' name='Metamask'/>     
             <WalletType icon='/images/icon/icon-walletconnect.svg' name='Wallet Connect'/>     
             <WalletType icon='/images/icon/icon-coinbase.svg' name='Coinbase Wallet'/>
-            <button className="flex items-center justify-center text-base font-medium text-primary dark:text-white rounded-full border-[1px] border-[#E6E8EC] px-6 py-3 mb-3 hover:bg-third">
+            <button className="flex items-center justify-center text-base font-medium text-primary dark:text-white rounded-full border-[1px] border-thrid dark:border-secondary px-6 py-3 mb-3 hover:bg-third">
               See More
             </button>     
           </div>

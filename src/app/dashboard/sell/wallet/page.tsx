@@ -31,7 +31,7 @@ export default function Bank() {
             
             <div className="flex w-1/2 flex-col gap-8">
               {/**Payment Method */}
-              <div className="bg-white rounded-3xl px-8 py-6">
+              <div className="bg-white dark:bg-primary rounded-3xl px-8 py-6">
                 <div className="font-medium text-xl text-primary dark:text-white mb-3">Payment Method</div>
                 <div className="flex flex-col gap-3">
                   <PaymentSelect bgcolor={paymentMethod == "Bank Transfer" ? "bg-[#E6E8EC]" : "bg-white"} icon_src="/images/icon/icon-bank.svg" content="Bank Transfer" handleClick={() => handlePaymentSelect("Bank Transfer")}/>

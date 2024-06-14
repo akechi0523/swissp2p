@@ -51,7 +51,7 @@ const OrderDetail = ({content}: Props) => {
 
   return (
     <>
-      <tr className="text-primary font-medium">
+      <tr className="text-primary dark:text-white font-medium">
         <td className="py-3">{content.id}</td>
         <td className="py-3">{content.date}</td>
         <td className={`py-3 ${content.exchange == 'Sell' ? 'text-[#FF3032]' : 'text-[#04C063]'}`}>{content.exchange}</td>

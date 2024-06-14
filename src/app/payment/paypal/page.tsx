@@ -24,7 +24,7 @@ export default function Buy() {
               <div className="flex flex-col w-1/2 gap-8">
                 <Account icon_src1="/images/icon/icon-bank.svg" name="Paypal" icon_src2={`${!isConfirm ? "/images/icon/icon-checked2.svg" : "/images/icon/icon-checked.svg"}`}/>
                 {/*Payment Details */}
-                <div className="bg-white rounded-3xl px-8 py-6">
+                <div className="bg-white dark:bg-primary rounded-3xl px-8 py-6">
                   <div className="font-medium text-xl text-primary dark:text-white mb-3">Payment Details</div>
                   <div className="flex flex-col gap-3">
                     <CommonInput title="Full Name" placeholder="Beneficiary name"/>
