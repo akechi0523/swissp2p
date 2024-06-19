@@ -1,8 +1,9 @@
 import Link from "next/link";
 import DarkModeSwitcher from "./DarkModeSwitcher";
 import DropdownNotification from "./DropdownNotification";
-import WalletConnect from "./WalletConnect";
 import Image from "next/image";
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+import { WalletConnect } from "../common/WalletConnect";
 
 const Header = (props: {
   sidebarOpen: string | boolean | undefined;
@@ -76,6 +77,7 @@ const Header = (props: {
             {/* <!-- Dark Mode Toggler --> */}
 
           </ul>
+          {/* <ConnectButton />          */}
           <WalletConnect />
           {/* <!-- User Area --> */}
           <div className="rounded-full">

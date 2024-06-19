@@ -9,6 +9,7 @@ type ContextType = {
   amount: string;
   paymentMethod: string;
   receivingMethod: string;
+  colorMode:string;
   setValues: React.Dispatch<React.SetStateAction<ContextType>>;
 };
 
@@ -22,6 +23,7 @@ export const TransactionProvider: React.FC<{ children: ReactNode }> = ({ childre
     amount: '',
     paymentMethod: '',
     receivingMethod: '',
+    colorMode:'light',
     setValues: () => {}
   });
 
