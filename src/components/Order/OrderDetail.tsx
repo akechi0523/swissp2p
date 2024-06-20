@@ -52,12 +52,12 @@ const OrderDetail = ({content}: Props) => {
   return (
     <>
       <tr className="text-primary dark:text-white font-medium">
-        <td className="py-3">{content.id}</td>
-        <td className="py-3">{content.date}</td>
-        <td className={`py-3 ${content.exchange == 'Sell' ? 'text-[#FF3032]' : 'text-[#04C063]'}`}>{content.exchange}</td>
-        <td className="py-3"><div className="flex items-center gap-2"><Image src={icon_exchange} width={24} height={24} alt="icon" />{content.amount} {content.currency}</div></td>
-        <td className="py-3"><div className="flex items-center gap-2"><Image src={icon_receiving} width={24} height={24} alt="icon" />{content.amount} {content.receiving}</div></td>
-        <td className="py-3"><div className="flex"><div className="text-[#04C063] bg-[#00C076] rounded bg-opacity-10 px-2 py-1">{content.status}</div></div></td>
+        <td className="px-3 pt-3 sticky">{content.id}</td>
+        <td className="px-3 pt-3 sticky">{content.date}</td>
+        <td className={`px-3 pt-3 sticky ${content.exchange == 'Sell' ? 'text-[#FF3032]' : 'text-[#04C063]'}`}>{content.exchange}</td>
+        <td className="px-3 pt-3 sticky"><div className="flex items-center gap-2"><Image src={icon_exchange} width={24} height={24} alt="icon" />{content.amount} {content.currency}</div></td>
+        <td className="px-3 pt-3 sticky"><div className="flex items-center gap-2"><Image src={icon_receiving} width={24} height={24} alt="icon" />{content.amount} {content.receiving}</div></td>
+        <td className="px-3 pt-3 sticky"><div className="flex"><div className="text-[#04C063] bg-[#00C076] rounded bg-opacity-10 px-2 py-1">{content.status}</div></div></td>
       </tr>
     </>
   );

@@ -32,45 +32,49 @@ const ReviewTransaction = () => {
   return (
     <>
       <button
-          className='flex items-center justify-center text-white font-medium rounded-2xl bg-[#7A6FC1] border-[1px] border-[#7A6FC1] py-4'
+          className='flex items-center justify-center text-white font-medium rounded-2xl bg-[#7A6FC1] border-[1px] border-[#7A6FC1] md:py-4 py-3'
           onClick={handleModal}
         >Review Transaction</button>
         {openModal &&
           <div className='fixed top-0 left-0 w-full h-full z-99999 bg-black bg-opacity-50 flex justify-center items-center'>
-            <div className='flex flex-col gap-6 bg-white dark:bg-primary rounded-3xl px-16 py-12 shadow-6 shadow-neutral-500'>
-              <div className="font-medium text-xl text-primary dark:text-white mb-3">Review Transaction</div>
-              <div className='flex items-center justify-between text-base font-normal text-primary dark:text-white gap-40'>
+            <div className='flex flex-col md:gap-6 gap-3 bg-white dark:bg-primary rounded-3xl md:px-16 px-4 md:py-12 py-4 mx-3 shadow-6 shadow-neutral-500'>
+              <div className="font-medium text-xl text-primary dark:text-white md:mb-3">Review Transaction</div>
+              <div className='flex items-center justify-between text-base font-normal text-primary dark:text-white'>
                 <div>Transaction Type</div>
                 <div className='text-[#04C063]'>{exchangeType}</div>
               </div>
-              <div className='flex items-center justify-between text-base font-normal text-primary dark:text-white gap-40'>
+              <div className='flex items-center justify-between text-base font-normal text-primary dark:text-white'>
                 <div>Transaction Time</div>
                 <div className='flex items-center gap-1'>
-                  <Image src="/images/icon/icon-watch.svg" width={24} height={24} alt="Watch"></Image>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className='stroke-current' xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.321 5.10417L15.1126 4.3125M4.0293 4.3125L4.82096 5.10417" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9.5708 18.166C13.5058 18.166 16.6958 14.976 16.6958 11.041C16.6958 7.10599 13.5058 3.91602 9.5708 3.91602C5.63577 3.91602 2.4458 7.10599 2.4458 11.041C2.4458 14.976 5.63577 18.166 9.5708 18.166Z" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9.57064 8.27051V11.4372L11.154 13.0205M9.57064 3.52051V2.33301M7.9873 2.33301H11.154" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
                   5 Min.
                 </div>
               </div>
               <div className='flex items-center justify-between text-base font-normal text-primary dark:text-white'>
                 <div>You wil pay</div>
                 <div className='flex justify-between w-40'>
-                  <span>{amount}</span>
                   <div className='flex items-center gap-2'>
                     <Image src="/images/icon/icon-chf.svg" width={24} height={24} alt="Watch"></Image>
                     CHF
                   </div>
+                  <span className='text-secondary'>{amount}</span>
                 </div>
               </div>
-              <div className='flex items-center justify-between text-base font-normal text-primary dark:text-white gap-40'>
+              <div className='flex items-center justify-between text-base font-normal text-primary dark:text-white md:gap-32'>
                 <div>You wil receive</div>
-                <div className='flex justify-between w-40'>
-                  <span>{amount}</span>
+                <div className='flex justify-between w-40'>                  
                   <div className='flex items-center gap-2'>
                     <Image src={icon} width={24} height={24} alt="Watch"></Image>
                     {currency}
                   </div>
+                  <span className='text-secondary'>{amount}</span>
                 </div>
               </div>
-              <div className='flex items-center justify-between text-base font-normal text-primary dark:text-white gap-40'>
+              <div className='flex items-center justify-between text-base font-normal text-primary dark:text-white'>
                 <div>Payment Method</div>
                 <div>{paymentMethod}</div>
               </div>
@@ -98,12 +102,12 @@ const ReviewTransaction = () => {
               {/*cancel & confirm*/}
               <div className='flex justify-between gap-10'>
                 <button
-                  className='flex w-1/2 items-center justify-center text-secondary font-medium rounded-2xl bg-white dark:bg-primary border-[1px] border-secondary py-4'
+                  className='flex w-1/2 items-center justify-center text-secondary font-medium rounded-2xl bg-white dark:bg-primary border-[1px] border-secondary md:py-4 py-3'
                   onClick={() => {handleModal(); setIsChecked(false);}}
                 >Cancel</button>
                 <Link 
                 href={`${isChecked ? '/order' : '#'}`}
-                  className='flex w-1/2 items-center justify-center text-white font-medium rounded-2xl bg-[#7A6FC1] border-[1px] border-[#7A6FC1] py-4'
+                  className='flex w-1/2 items-center justify-center text-white font-medium rounded-2xl bg-[#7A6FC1] border-[1px] border-[#7A6FC1] md:py-4 py-3'
                   onClick={() => {if(isChecked) {handleModal(); setIsChecked(false);}}}
                 >Confirm</Link>
             </div>

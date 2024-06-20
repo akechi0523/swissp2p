@@ -28,7 +28,7 @@ const ReceivingMethod = () => {
     }
   
   return (
-    <div className="bg-white dark:bg-primary rounded-3xl px-8 py-6">
+    <div className="bg-white dark:bg-primary rounded-3xl md:px-8 px-4 md:py-6 py-4">
       <div className="font-medium text-xl text-primary dark:text-white mb-3">Receiving Method</div>
       <div className="flex flex-col gap-4">
         <ReceivingSelect path={`${amount ? 'buy/binance/' + route : '#'}`} bgcolor="bg-[#F2C94C]" icon="/images/icon/icon-binance.svg" icon_size={36} content="Binance Pay"/>

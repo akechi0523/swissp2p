@@ -2,7 +2,6 @@ import Link from "next/link";
 import DarkModeSwitcher from "./DarkModeSwitcher";
 import DropdownNotification from "./DropdownNotification";
 import Image from "next/image";
-import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { WalletConnect } from "../common/WalletConnect";
 
 const Header = (props: {
@@ -23,7 +22,7 @@ const Header = (props: {
             className="z-99999 block rounded-sm border border-stroke bg-white p-1.5 shadow-sm dark:border-strokedark dark:bg-primary duration-300 ease-linear lg:hidden"
           >
             <span className="relative block h-5.5 w-5.5 cursor-pointer">
-              <span className="du-block absolute right-0 h-full w-full">
+              <span className="block absolute right-0 h-full w-full">
                 <span
                   className={`relative left-0 top-0 my-1 block h-0.5 w-0 rounded-sm bg-black delay-[0] duration-200 ease-in-out dark:bg-white ${
                     !props.sidebarOpen && "!w-full delay-300"
@@ -56,13 +55,13 @@ const Header = (props: {
           </button>
           {/* <!-- Hamburger Toggle BTN --> */}
 
-          <Link className="block flex-shrink-0 lg:hidden" href="/">
+          <Link className="flex items-center text-xl text-black gap-2 font-medium flex-shrink-0 lg:hidden" href="/">
             <Image
-              width={28}
+              width={24}
               height={32}
               src={"/images/logo/logo-icon.png"}
               alt="Logo"
-            />
+            /> SwissP2P
           </Link>
         </div>
 

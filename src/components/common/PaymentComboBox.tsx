@@ -38,7 +38,7 @@ const PaymentComboBox = ({options, select, isConfirm}: Props) => {
       </div>
       <button
         type='button'
-        className='flex items-center justify-between rounded-full border-[1px] border-thrid dark:border-secondary px-6 py-3'
+        className='flex items-center justify-between rounded-full border-[1px] border-thrid dark:border-secondary px-6 md:py-3 py-2'
         onClick={toggleCombobox}
       >
         <div className="flex items-center gap-2 font-medium text-primary dark:text-white">

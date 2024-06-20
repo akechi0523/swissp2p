@@ -10,7 +10,7 @@ export default function Profile() {
   return (
     <>
       <DefaultLayout>
-        <div className="pr-16">
+        <div className="md:pr-16">
           <div className="font-medium text-xl text-primary dark:text-white mb-5">Profile</div>
           <Avatar />
           <div className="flex items-center gap-5 mb-5">

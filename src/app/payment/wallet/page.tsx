@@ -28,10 +28,10 @@ export default function Buy() {
   return (
     <>
         <DefaultLayout>
-          <div className="pr-16">
+          <div className="md:pr-16">
             <div className="font-medium text-xl text-primary dark:text-white mb-5">{`${isConfirm? 'Wallet Confirmation' : 'Wallet Details'}`}</div>
-            <div className="flex gap-12">
-              <div className="flex flex-col w-1/2 gap-8">
+            <div className="flex flex-wrap md:flex-nowrap md:gap-12 gap-6">
+              <div className="flex flex-col md:w-1/2 w-full md:gap-8 gap-6">
                 <div className="flex items-center justify-between rounded-3xl bg-white dark:bg-primary border-none px-5 py-3">
                   <div className="flex items-center gap-3 text-lg font-medium text-primary dark:text-white">
                     <svg width="36" height="37" viewBox="0 0 36 37" fill="none" className="fill-current" xmlns="http://www.w3.org/2000/svg">
@@ -43,7 +43,7 @@ export default function Buy() {
                   <Image src={`${!isConfirm ? "/images/icon/icon-checked2.svg" : "/images/icon/icon-checked.svg"}`} width={22} height={22} alt="icon2"/>
                 </div>
                 {/*Wallet Details */}
-                <div className="bg-white dark:bg-primary rounded-3xl px-8 py-6">
+                <div className="bg-white dark:bg-primary rounded-3xl md:px-8 px-4 md:py-6 py-4">
                   <div className="font-medium text-xl text-primary dark:text-white mb-3">Wallet Details</div>
                   <div className="flex flex-col">
                     <PaymentComboBox options={selectCurrencyOptions} select="Select Currency" isConfirm={isConfirm}/>
@@ -51,7 +51,7 @@ export default function Buy() {
                   </div>
                 </div>
                 {/**Wallet Address */}
-                <div className="bg-white dark:bg-primary rounded-3xl px-8 py-6">
+                <div className="bg-white dark:bg-primary rounded-3xl md:px-8 px-4 md:py-6 py-4">
                   <div className="font-medium text-xl text-primary dark:text-white mb-3">Wallet Address</div>
                   <div className="flex flex-col gap-3">
                     <div className="flex items-center justify-center bg-third dark:bg-secondary text-secondary dark:text-white rounded-full border-none px-6 py-3">
@@ -71,7 +71,7 @@ export default function Buy() {
                 {!isConfirm && <ConfirmButton handleClick={handleClick} />}
                 { isConfirm && <AddWallet />}
               </div>
-              <div className="flex flex-col w-1/2 gap-8">
+              <div className="flex flex-col md:w-1/2 w-full md:gap-8 gap-6">
               { !isConfirm && 
                 <>
                   <div className="text-base text-primary dark:text-white">Description

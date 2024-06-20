@@ -28,7 +28,7 @@ const CountryComboBox = () => {
       </div>
       <button
         type='button'
-        className='flex items-center justify-between text-primary dark:text-white dark:bg-primary rounded-full border-[1px] border-thrid dark:border-secondary px-6 py-3'
+        className='flex items-center justify-between text-primary dark:text-white dark:bg-primary rounded-full border-[1px] border-thrid dark:border-secondary px-6 md:py-3 py-2'
         onClick={toggleCombobox}
       >
         <div className="items-center">

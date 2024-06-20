@@ -6,10 +6,10 @@ export default function Buy() {
   return (
     <>
       <DefaultLayout>
-        <div className="pr-16">
+        <div className="md:pr-16">
           <div className="font-medium text-xl text-primary dark:text-white mb-5">Payment To Buy</div>
-          <div className="flex gap-12">              
-            <div className="flex flex-col w-1/2 gap-3">              
+          <div className="flex flex-wrap md:flex-nowrap md:gap-12 gap-6">              
+            <div className="flex flex-col md:w-1/2 w-full gap-3">              
               <div className="flex items-center justify-between rounded-3xl bg-white dark:bg-primary border-none px-5 py-3">
                 <div className="flex items-center gap-3 text-base font-medium text-primary dark:text-white">
                 <svg width="37" height="37" viewBox="0 0 37 37" fill="none" className="fill-current dark:fill-current" xmlns="http://www.w3.org/2000/svg">

@@ -33,7 +33,7 @@ export const WalletConnect = () => {
   if (!isConnected) {
     return (
       <button
-        className="rounded-full text-base text-white bg-primary dark:bg-secondary px-4 py-2"
+        className="rounded-full md:block hidden text-base text-white bg-primary dark:bg-secondary px-4 py-2"
         onClick={async () => {
           // Disconnecting wallet first because sometimes when is connected but the user is not connected
           if (isConnected) {
@@ -50,21 +50,21 @@ export const WalletConnect = () => {
 
   if (isConnected && !chain) {
     return (
-      <button className="rounded-full text-base text-white bg-primary dark:bg-secondary px-4 py-2" onClick={openChainModal}>
+      <button className="rounded-full md:block hidden text-base text-white bg-primary dark:bg-secondary px-4 py-2" onClick={openChainModal}>
         Wrong network
       </button>
     );
   }
 
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between md:block hidden">
       <button
         className="rounded-full text-base text-white bg-primary dark:bg-secondary px-4 py-2"
         onClick={async () => openAccountModal?.()}
       >
         <p>{middleEllipsis(address as string, 4)}</p>
       </button>
-      {/* <button className="rounded-full text-base text-white bg-primary dark:bg-secondary px-4 py-2" onClick={openChainModal}>
+      {/* <button className="rounded-full md:block hidden text-base text-white bg-primary dark:bg-secondary px-4 py-2" onClick={openChainModal}>
         Chain
       </button> */}
     </div>

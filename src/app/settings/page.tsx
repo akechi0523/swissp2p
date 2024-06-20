@@ -9,14 +9,14 @@ export default function Settings() {
   return (
     <>
       <DefaultLayout>
-        <div className="pr-16">
+        <div className="md:pr-16">
           <div className="font-medium text-xl text-primary dark:text-white mb-5">Settings</div>
           <ProfileInfo />
-          <div className="flex gap-12 mt-8">
-            <div className="flex w-1/2 flex-col gap-8">
+          <div className="flex flex-wrap md:flex-nowrap md:gap-12 gap-6 mt-8">
+            <div className="flex md:w-1/2 w-full flex-col">
               <TwoFactorAuth />
             </div>
-            <div className="flex w-1/2 flex-col gap-8">
+            <div className="flex md:w-1/2 w-full flex-col">
               <AccountManagement />
             </div>
           </div>

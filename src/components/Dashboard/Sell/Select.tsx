@@ -33,9 +33,9 @@ const Select = () => {
 	}
 
 	return (
-		<div className="bg-white dark:bg-primary rounded-3xl px-8 py-6">
+		<div className="bg-white dark:bg-primary rounded-3xl md:px-8 px-4 md:py-6 py-4">
 			<div className="font-medium text-xl text-primary dark:text-white mb-3">Select</div>
-			<div className="flex gap-5 mb-5">
+			<div className="flex md:gap-5 gap-2 mb-5">
 				<button
 					onClick={() => handleCurrencySelect("USDT")} 
 					className={`flex w-1/3 gap-2 items-center justify-center py-3 border-[1px] border-third dark:border-secondary rounded-full ${currency == "USDT" ? "bg-third dark:bg-secondary" : ""} hover:bg-third dark:hover:bg-secondary text-base font-medium text-primary dark:text-white`}
@@ -64,7 +64,7 @@ const Select = () => {
 			<div className="text-base font-normal text-primary dark:text-white mb-3">Order No:
 				<span className="text-secondary pl-3">{orderNo}</span>
 			</div>			
-      <div className="flex items-center justify-between mt-1 rounded-full border-[1px] border-third dark:border-secondary px-6 py-3">
+      <div className="flex items-center justify-between mt-1 rounded-full border-[1px] border-third dark:border-secondary px-6 md:py-3 py-2">
         <div className="flex items-center gap-2 font-medium text-primary dark:text-white">
           <Image src={icon} width={24} height={24} alt="USDT"/>
           {currency}

@@ -18,13 +18,13 @@ export default function Buy() {
   return (
     <>
         <DefaultLayout>
-          <div className="pr-16">
+          <div className="md:pr-16">
             <div className="font-medium text-xl text-primary dark:text-white mb-5">{`${isConfirm? 'Revolut Confirmation' : 'Revolut Details'}`}</div>
-            <div className="flex gap-12">
-              <div className="flex flex-col w-1/2 gap-8">
+            <div className="flex flex-wrap md:flex-nowrap md:gap-12 gap-6">
+              <div className="flex flex-col md:w-1/2 w-full md:gap-8 gap-6">
                 <Account icon_src1="/images/icon/icon-bank.svg" name="Revolut" icon_src2={`${!isConfirm ? "/images/icon/icon-checked2.svg" : "/images/icon/icon-checked.svg"}`}/>
                 {/*Payment Details */}
-                <div className="bg-white dark:bg-primary rounded-3xl px-8 py-6">
+                <div className="bg-white dark:bg-primary rounded-3xl md:px-8 px-4 md:py-6 py-4">
                   <div className="font-medium text-xl text-primary dark:text-white mb-3">Payment Details</div>
                   <div className="flex flex-col gap-3">
                     <CommonInput title="Full Name" placeholder="Beneficiary name"/>
@@ -34,7 +34,7 @@ export default function Buy() {
                 </div>
                 {!isConfirm && <ConfirmButton handleClick={handleClick} />}
               </div>
-              <div className="flex flex-col w-1/2 gap-8">
+              <div className="flex flex-col md:w-1/2 w-full md:gap-8 gap-6">
               { !isConfirm && 
                 <>
                   <div className="text-base text-primary dark:text-white">Description

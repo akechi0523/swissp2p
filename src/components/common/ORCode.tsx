@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const QRCode = () => {
   return (
-    <div className="bg-white dark:bg-primary rounded-3xl px-8 py-6">
+    <div className="bg-white dark:bg-primary rounded-3xl md:px-8 px-4 md:py-6 py-4">
       <div className="font-medium text-xl text-primary dark:text-white mb-3">QR Code</div>
       <div className="flex justify-center items-center">
         <div className="flex justify-center items-center bg-[#04C063] bg-opacity-5 w-[185px] h-[185px] rounded-2xl">
