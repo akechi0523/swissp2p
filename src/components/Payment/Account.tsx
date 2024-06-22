@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-
 interface Props {
 	icon_src1: string;
 	icon_src2: string;

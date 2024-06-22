@@ -1,6 +1,5 @@
-import Dashboard from "@/components/Dashboard/Buy/dashboard";
 import { Metadata } from "next";
-import DefaultLayout from "@/components/Layouts/DefaultLayout";
+import LP from "@/components/LP/LP";
 
 export const metadata: Metadata = {
   title:
@@ -10,10 +9,11 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <>
-      <DefaultLayout>
+    <div className="bg-white h-full">
+      <LP />
+      {/* <DefaultLayout>
         <Dashboard />
-      </DefaultLayout>
-    </>
+      </DefaultLayout> */}
+    </div>
   );
 }
