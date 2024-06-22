@@ -242,8 +242,8 @@ const LPHeader = (props: {
               /> SwissP2P
             </Link>
             <ul className="hidden md:flex lg:gap-8 gap-4 items-center text-primary">
-              <li><Link href='/'>Buy</Link></li>
-              <li><Link href='/'>Sell</Link></li>
+              <li><Link href='/dashboard/buy'>Buy</Link></li>
+              <li><Link href='/dashboard/sell'>Sell</Link></li>
               <li><Link href='/'>Wallet</Link></li>
               <li><Link href='/'>Support</Link></li>
               <li><Link href='/'>Live Chat</Link></li>
