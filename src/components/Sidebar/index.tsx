@@ -191,7 +191,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
 
       <div className="absolute bottom-6 right-6 flex gap-4">
         <Image src='/images/icon/icon-chat.svg' width={44} height={44} alt="icon" />
-        <Image src='/images/icon/icon-support.svg' width={44} height={44} alt="icon" /> 
+        <Link href={"/support"}>
+          <Image src='/images/icon/icon-support.svg' width={44} height={44} alt="icon" />
+        </Link> 
       </div>
     </aside>
   );

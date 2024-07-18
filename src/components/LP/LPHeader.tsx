@@ -18,13 +18,13 @@ const LPHeader = (props: {
     <>
       <aside
         ref={sidebar}
-        className={`${props.sidebarOpen ? "flex" : "hidden"} absolute left-0 top-0 z-9999 h-screen w-72.5 flex-col overflow-y-hidden bg-white duration-300 ease-linear dark:bg-primary lg:static lg:translate-x-0 ${
+        className={`md:hidden fixed left-0 top-0 bottom-0 z-9999 h-screen w-72.5 flex-col overflow-y-hidden bg-white duration-300 ease-linear dark:bg-primary lg:static lg:translate-x-0 ${
           props.sidebarOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
         {/* <!-- SIDEBAR HEADER --> */}
         <div className="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5">
-          <Link href="/dashboard" className="flex gap-3">
+          <Link href="/" className="flex gap-3">
             <Image
               width={24}
               height={24}
@@ -245,7 +245,7 @@ const LPHeader = (props: {
               <li><Link href='/dashboard/buy'>Buy</Link></li>
               <li><Link href='/dashboard/sell'>Sell</Link></li>
               <li><Link href='/'>Wallet</Link></li>
-              <li><Link href='/'>Support</Link></li>
+              <li><Link href='/support'>Support</Link></li>
               <li><Link href='/'>Live Chat</Link></li>
             </ul>
           </div>

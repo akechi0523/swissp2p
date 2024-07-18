@@ -15,7 +15,7 @@ const LP = () => {
         <div className="flex flex-col gap-6">
           <div className="text-primary text-6xl font-bold">SwissP2P Bridge</div>
           <div className="text-secondary text-base">Buy & Sell Crypto in Minutes</div>
-          <Link href='/' className="md:w-1/3 px-6 py-3 text-white text-center bg-primary rounded-full text-nowrap">Get started</Link>
+          <Link href='/' className="md:w-40 px-6 py-3 text-white text-center bg-primary rounded-full text-nowrap">Get started</Link>
         </div>
         <div className="flex items-center justify-center md:w-150 md:h-150 rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#88f7bf] from-5% to-white to-70% filter">
           <Image src={'/images/icon/hero.svg'} width={450} height={450} alt="hero"></Image>

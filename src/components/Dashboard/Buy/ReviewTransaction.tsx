@@ -110,7 +110,7 @@ const ReviewTransaction = () => {
                   className='flex w-1/2 items-center justify-center text-white font-medium rounded-2xl bg-[#7A6FC1] border-[1px] border-[#7A6FC1] md:py-4 py-3'
                   onClick={() => {if(isChecked) {handleModal(); setIsChecked(false);}}}
                 >Confirm</Link>
-            </div>
+              </div>
             </div>
           </div>
           
