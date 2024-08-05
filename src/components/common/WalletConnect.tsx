@@ -43,7 +43,7 @@ export const WalletConnect = () => {
         }}
         disabled={isConnecting}
       >
-        { isConnecting ? 'Connecting...' : 'Connect Wallet' }
+        {isConnecting ? 'Connecting...' : 'Connect Wallet'}
       </button>
     );
   }
@@ -64,9 +64,6 @@ export const WalletConnect = () => {
       >
         <p>{middleEllipsis(address as string, 4)}</p>
       </button>
-      {/* <button className="rounded-full md:block hidden text-base text-white bg-primary dark:bg-secondary px-4 py-2" onClick={openChainModal}>
-        Chain
-      </button> */}
     </div>
   );
 };

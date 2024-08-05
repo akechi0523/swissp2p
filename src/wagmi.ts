@@ -1,28 +1,3 @@
-// import { getDefaultConfig } from '@rainbow-me/rainbowkit';
-// import '@rainbow-me/rainbowkit/styles.css';
-// import {
-//   arbitrum,
-//   base,
-//   mainnet,
-//   optimism,
-//   polygon,
-//   sepolia,
-// } from 'wagmi/chains';
-
-// export const config = getDefaultConfig({
-//   appName: 'swissp2p',
-//   projectId: '8828c41916158084bcec99ca8b8df215',
-//   chains: [
-//     mainnet,
-//     polygon,
-//     optimism,
-//     arbitrum,
-//     base,
-//     ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true' ? [sepolia] : []),
-//   ],
-//   ssr: true,
-// });
-
 'use client';
 
 import '@rainbow-me/rainbowkit/styles.css';
