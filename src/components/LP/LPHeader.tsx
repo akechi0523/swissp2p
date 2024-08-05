@@ -246,7 +246,7 @@ const LPHeader = (props: {
               <li><Link href='/dashboard/sell'>Sell</Link></li>
               <li><Link href='/'>Wallet</Link></li>
               <li><Link href='/support'>Support</Link></li>
-              <li><Link href='/'>Live Chat</Link></li>
+              <li><Link href='/chat'>Live Chat</Link></li>
             </ul>
           </div>
         </div>
