@@ -2,7 +2,9 @@ import Link from "next/link";
 import DarkModeSwitcher from "./DarkModeSwitcher";
 import DropdownNotification from "./DropdownNotification";
 import Image from "next/image";
-import { WalletConnect } from "../common/WalletConnect";
+// import { WalletConnect } from "../common/WalletConnect";
+// import { WalletConnectModal } from "./WalletConnectModal";
+import WalletConnect from "./WalletConnect";
 
 const Header = (props: {
   sidebarOpen: string | boolean | undefined;
@@ -76,7 +78,6 @@ const Header = (props: {
             {/* <!-- Dark Mode Toggler --> */}
 
           </ul>
-          {/* <ConnectButton />          */}
           <WalletConnect />
           {/* <!-- User Area --> */}
           <div className="rounded-full">

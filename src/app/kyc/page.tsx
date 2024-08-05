@@ -17,13 +17,12 @@ export default function Bank() {
             <div className="flex md:w-1/2 w-full flex-col gap-6">
               <CountryComboBox />
               <DocumentSelect />
-              <Uplaod title="Upload Front Part"/>
-              <Uplaod title="Upload Back Part"/>
+              <Uplaod title="Upload Front Part" />
+              <Uplaod title="Upload Back Part" />
             </div>
-            
             <div className="flex md:w-1/2 w-full flex-col md:gap-8 gap-6">
               {/*Payment Details */}
-              <Uplaod title="Upload Video"/>
+              <Uplaod title="Upload Video" />
               <div className="text-base text-primary dark:text-white">Description
                 <p className="text-sm text-secondary py-2">Lorem ipsum dolor sit amet consectetur. Erat donec etiam id dictum id ac. Vulputate egestas id lacus mauris lectus hac. Nunc semper malesuada sed pharetra tellus vitae.</p>
               </div>
