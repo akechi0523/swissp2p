@@ -7,8 +7,8 @@ interface Props {
 
 const CoinType = ({ name, icon }: Props) => {
   return (
-    <button className={'flex text-base font-medium text-primary dark:text-white dark:border-secondary px-4 py-3 hover:bg-third dark:hover:bg-secondary w-full rounded-xl'}>
-      <Image src={icon} width={24} height={24} alt="icon" />
+    <button className={'flex items-center md:text-base text-sm font-medium text-primary dark:text-white dark:border-secondary hover:bg-third dark:hover:bg-secondary'}>
+      <Image src={icon} width={20} height={20} alt="icon"/>
       <div className="ms-2">
         {name}
       </div>

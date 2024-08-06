@@ -12,7 +12,7 @@ const Header = (props: {
 }) => {
   return (
     <header className="sticky top-0 z-999 flex w-full bg-white drop-shadow-1 dark:bg-primary duration-300 ease-linear dark:drop-shadow-none">
-      <div className="flex flex-grow items-center justify-between md:justify-end px-4 py-4 shadow-2 md:px-6 2xl:px-11">
+      <div className="flex flex-grow items-center justify-between lg:justify-end px-4 py-4 shadow-2 md:px-6 2xl:px-11 gap-4">
         <div className="flex items-center gap-2 sm:gap-4 lg:hidden">
           {/* <!-- Hamburger Toggle BTN --> */}
           <button
@@ -63,7 +63,7 @@ const Header = (props: {
               height={32}
               src={"/images/logo/logo-icon.png"}
               alt="Logo"
-            /> SwissP2P
+            /> <span className="hidden md:block">SwissP2P</span>
           </Link>
         </div>
 
@@ -80,7 +80,7 @@ const Header = (props: {
           </ul>
           <WalletConnect />
           {/* <!-- User Area --> */}
-          <div className="rounded-full">
+          <div className="rounded-full hidden md:block">
             <Image
               width={40}
               height={40}
